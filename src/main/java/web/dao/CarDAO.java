@@ -5,6 +5,7 @@ import web.models.Car;
 
 import java.util.ArrayList;
 import java.util.List;
+
 @Component
 public class CarDAO {
     private List<Car> cars = new ArrayList<>();
@@ -17,8 +18,8 @@ public class CarDAO {
         cars.add(new Car(5, "toyota", "2000"));
     }
 
-    public List<Car> getCars(int count) {
-        return cars.subList(0,count);
+    public List<Car> getCarsIndex(int count) {
+        return cars.subList(0, count);
     }
 
     public List<Car> getCars() {

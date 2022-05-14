@@ -13,7 +13,7 @@
             <th>Model</th>
             <th>Engine</th>
         </tr>
-        <tr th:each="cars : ${getAllCars}">
+        <tr th:each="cars : ${getCars}">
             <td th:utext="${cars.getId()}"></td>
             <td th:utext="${cars.getModel()}"></td>
             <td th:utext="${cars.getEngine()}"></td>
