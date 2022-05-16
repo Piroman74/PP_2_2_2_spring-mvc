@@ -1,6 +1,7 @@
 package web.models;
 
 public class Car {
+
     private int id;
     private String model;
     private String engine;
